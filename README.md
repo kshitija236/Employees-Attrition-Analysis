@@ -27,6 +27,8 @@ The downloaded file is present in Data folder.
 4. Gaussian naïve Bayes 
 5. Gradient Boosting
 
+
+## Metrics used
 Above models are compared on the basis of following metrics.
 1. Accuracy
 2. Precision
@@ -38,7 +40,7 @@ Comparison of model on basis of these metrics revealed that random forest can be
 After finalising the model, **grid search** over range of hyperparameters is used and models were compared using **stratified k-fold cross validation**.
 Feature importance is plotted for the final model.
 
-Observations:
+## Observations
 1. From the feature importance it was seen that our engineered features i.e. "TenurePerJob", "CompRatioOverall" and "YearsWithoutChange" have higher importance values compared to many of the other given features. Thus it is concluded that feature engineering was successful.
 2. Using SMOTE oversampling helped in improving model's predictions. Earlier models were biased towards predicting majority class only, after using SMOTE this is no longer the case.
 3. Hyperparamter tuning using grid search resulted in improved ROC score on validation set from 59% to 69%.
