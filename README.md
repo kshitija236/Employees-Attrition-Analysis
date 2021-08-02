@@ -15,10 +15,10 @@ The downloaded file is present in Data folder.
 
 ## Preprocessing and feature engineering
 1. Categorical features are encoded using **one hot encoding scheme**.
-2. Numerical features with skewness value greater than 0.8 are transformed using **log transformation.**
+2. Numerical features with **skewness** value greater than 0.8 are transformed using **log transformation.**
 3. Three **new features** viz. tenure per job, years without change and compensation ratio were **created** using existing features.
 4. **Irrelevant attributes** viz. EmployeeNumber, EmployeeCount, Over18 and StandardHours were **dropped**.
-5. Data is highly imbalanced, **SMOTE** is used to tackle data imbalance.
+5. Sybthetic Minority Oversampling Technique **SMOTE** is used to tackle data imbalance.
 
 ## ALgorithm tried
 1. Decision Tree
