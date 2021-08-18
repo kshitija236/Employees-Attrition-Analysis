@@ -24,12 +24,12 @@ The downloaded file is present in Data folder.
 ## ALgorithm tried
 1. LogisticRegression
 2. SVC
-3 	DecisionTreeClassifier 	    
-4 	RandomForestClassifier 	    
-5 	ExtraTreesClassifier 	      
-6 	GradientBoostingClassifier 	
-7 	AdaBoostClassifier 	        
-8 	GaussianNB 	
+3. DecisionTreeClassifier 	    
+4. RandomForestClassifier 	    
+5. ExtraTreesClassifier 	      
+6. GradientBoostingClassifier 	
+7. AdaBoostClassifier 	        
+8. GaussianNB 	
 
 ## Metrics used
 Above models are compared on the basis of following metrics.
