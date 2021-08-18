@@ -18,8 +18,10 @@ The downloaded file is present in Data folder.
 2. Numerical features with **skewness** value greater than 0.8 are transformed using **log transformation.**
 3. Three **new features** viz. tenure per job, years without change and compensation ratio were **created** using existing features.
 4. **Irrelevant attributes** viz. EmployeeNumber, EmployeeCount, Over18 and StandardHours were **dropped**.
-5. Sybthetic Minority Oversampling Technique **SMOTE** is used to tackle data imbalance.
-6. **Principal Component Analysis** is used for dimensionality reduction of data.
+5. **One hot encoding** is used to transform cardinal categorical features.
+6. **Label encoding** is used to transform ordinal categorical features and target labels.
+7. Sybthetic Minority Oversampling Technique **SMOTE** is used to tackle data imbalance.
+8. **Principal Component Analysis** is used for dimensionality reduction of data.
 
 ## ALgorithm tried
 1. LogisticRegression
