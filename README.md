@@ -40,8 +40,8 @@ Above models are compared on the basis of following metrics.
 5. ROC
 
 ## Performance of various models
-    Model 	                    Accuracy 	  Precision 	Sensitivity 	Specificity 	ROC Score
-1 	LogisticRegression 	        77.966102 	51.428571 	66.666667 	  81.318681 	  0.739927
+    Model 	                 -    Accuracy 	-  Precision -	Sensitivity -	Specificity  -	ROC Score
+1 	LogisticRegression 	     -   77.966102  -  51.428571 -	66.666667 	-   81.318681 	 -  0.739927
 2 	SVC 	                      85.593220 	75.000000 	55.555556 	  94.505495 	  0.750305
 3 	DecisionTreeClassifier 	    78.813559 	54.545455 	44.444444 	  89.010989 	  0.667277
 4 	RandomForestClassifier 	    79.661017 	63.636364 	25.925926 	  95.604396 	  0.607652
