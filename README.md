@@ -19,22 +19,39 @@ The downloaded file is present in Data folder.
 3. Three **new features** viz. tenure per job, years without change and compensation ratio were **created** using existing features.
 4. **Irrelevant attributes** viz. EmployeeNumber, EmployeeCount, Over18 and StandardHours were **dropped**.
 5. Sybthetic Minority Oversampling Technique **SMOTE** is used to tackle data imbalance.
+6. **Principal Component Analysis** is used for dimensionality reduction of data.
 
 ## ALgorithm tried
-1. Decision Tree
+1. LogisticRegression
 2. SVC
-3. Random Forest
-4. Gaussian naïve Bayes 
-5. Gradient Boosting
-
+3 	DecisionTreeClassifier 	    
+4 	RandomForestClassifier 	    
+5 	ExtraTreesClassifier 	      
+6 	GradientBoostingClassifier 	
+7 	AdaBoostClassifier 	        
+8 	GaussianNB 	
 
 ## Metrics used
 Above models are compared on the basis of following metrics.
 1. Accuracy
 2. Precision
-3. Recall
+3. Sensitivity
 4. F1
 5. ROC
+
+## Performance of various models
+    Model 	                    Accuracy 	  Precision 	Sensitivity 	Specificity 	ROC Score
+1 	LogisticRegression 	        77.966102 	51.428571 	66.666667 	  81.318681 	  0.739927
+2 	SVC 	                      85.593220 	75.000000 	55.555556 	  94.505495 	  0.750305
+3 	DecisionTreeClassifier 	    78.813559 	54.545455 	44.444444 	  89.010989 	  0.667277
+4 	RandomForestClassifier 	    79.661017 	63.636364 	25.925926 	  95.604396 	  0.607652
+5 	ExtraTreesClassifier 	      81.355932 	77.777778 	25.925926 	  97.802198 	  0.618641
+6 	GradientBoostingClassifier 	83.898305 	75.000000 	44.444444 	  95.604396 	  0.700244
+7 	AdaBoostClassifier 	        84.745763 	73.684211 	51.851852 	  94.505495 	  0.731787
+8 	GaussianNB 	                72.033898 	43.478261 	74.074074 	  71.428571 	  0.727513
+
+
+
 
 Comparison of model on basis of these metrics revealed that random forest can be used as final model for predicting attrition.
 After finalising the model, **grid search** over range of hyperparameters is used and models were compared using **stratified k-fold cross validation**.
@@ -43,4 +60,4 @@ Feature importance is plotted for the final model.
 ## Observations
 1. From the feature importance it was seen that our engineered features i.e. "TenurePerJob", "CompRatioOverall" and "YearsWithoutChange" have higher importance values compared to many of the other given features. Thus it is concluded that feature engineering was successful.
 2. Using SMOTE oversampling helped in improving model's predictions. Earlier models were biased towards predicting majority class only, after using SMOTE this is no longer the case.
-3. Hyperparamter tuning using grid search resulted in improved ROC score on validation set from 59% to 69%.
+
